@@ -1,0 +1,40 @@
+figure {width: 100%; height: 70vh; background: #fff;z-index: 1;overflow: hidden;}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    height: 90%;;
+   
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+
+
+// .ss1 {background: url(../img/img1.jpeg) no-repeat center/cover}
+// .ss2 {background: url(../img/img2.jpeg) no-repeat center/cover;}
+// .ss3 {background: url(../img/img3.jpeg) no-repeat center/cover;}
+// .ss4 {background: url(../img/img4.jpeg) no-repeat center/cover;}
+// .ss5 {background: url(../img/img5.jpeg) no-repeat center/cover;}
+
+
+@for $i from 1 through 5{
+    .ss#{$i} {background: url(../img/img#{$i}.jpeg) no-repeat center/cover;}
+}
+
+.swiper-pagination {bottom: 0;left: 50%;}
